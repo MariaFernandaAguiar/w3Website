@@ -1,0 +1,246 @@
+<div class="h-screen flex flex-col">
+    <div class="absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-60 h-60 rounded-full blur-2xl opacity-40"></div>
+    <div class="fixed items-center p-6 w-auto ml-80 justify-center bg-slate-50 rounded-lg">
+        <nav class="flex items-center gap-5">
+            <%= image_tag 'logo.png', width: "210px", height: "50px", class:"mr-36" %>
+            <a href="" class="text-sn text-lime-500 hover:text-lime-700"><strong>Inicio</strong></a>
+            <a href="" class="text-sn text-black hover:text-lime-500"><strong>Sobre</strong></a>
+            <a href="" class="text-sn text-black hover:text-lime-500"><strong>Serviços</strong></a>
+            <a href="" class="text-sn text-black hover:text-lime-500"><strong>Blog</strong></a>
+            <a href="" class="text-sn text-black hover:text-lime-500"><strong>Ajuda</strong></a>
+            <button class="w-24 h-8 rounded-full border-solid border-2 border-zinc-300 hover:bg-lime-500 ml-8"><strong>Contato</strong></button>
+        </nav>
+    </div>
+    <div class="w-4 h-4 bg-gradient-to-r from-violet-400 to-violet-600 absolute rounded-full ml-48 mt-28 drop-shadow-lg hover:rotate-90"></div>
+    <div class="w-5 h-5 bg-gradient-to-r from-yellow-400 to-yellow-600 absolute rounded-full ml-[38rem] mt-[28rem] drop-shadow-lg hover:rotate-90"></div>
+   
+   <div class="flex items-center w-full mt-32 justify-center">
+        <div class="w-2/5 h-auto mr-20 mt-16">
+            <h1 class="text-left w-96 text-6xl"><strong>Tecnologia e Criatividade</strong></h1>
+            <p class="text-xl leading-8 mt-8">Comunicação com ênfase em criação, mídia e produção digital. Pensamento e planejamento inovadores para proporcionar soluções inteligentes.</p>
+            <button class="w-56 h-10 hover:drop-shadow-xl rounded-full border-solid bg-gradient-to-r from-lime-500 to-indigo-600 text-white mt-16">Entre em contato</button>
+        </div>
+        
+        
+        <div class="flex flex-col mt-8 gap-2 bg-slate-300 bg-opacity-30 shadow-lg w-1/5 h-auto justify-center rounded-lg hover:rotate-12">
+            <div class="flex items-center">
+                <div class="w-8 h-8 ml-5 mt-4 rounded-full bg-white border-solid border-2 border-stone-300">
+                    <div class="w-3 h-3 bg-blue-400 absolute rounded-full border-solid border-2 border-black ml-5 mt-5"></div>
+                    <%= image_tag 'image 1.png', width: "20px", height: "20px", class:"ml-1 mt-1" %>
+                </div>
+                <h4 class="text-xs mt-4 ml-1"><strong>Agencia W3</strong></h4>
+                <div class="w-2 h-2 bg-black absolute rounded-full ml-60 mt-5"></div>
+                <div class="w-2 h-2 bg-black absolute rounded-full ml-64 mt-5"></div>
+            </div>
+            <div class="bg-lime-300 w-64 h-72 ml-6 rounded-lg"><%= image_tag 'logo2.png', width: "200px", height: "200px", class:"ml-7 mt-10" %></div>
+            <h4 class="text-sm mt-3 ml-6"><strong>lorem ipsum</strong></h4>
+            <h4 class="text-sm -mt-2 ml-6 mb-4">Lorem ipsum dolor sit amet</h4>
+        </div>
+        <div class="absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-96 h-96 mt-96 ml-[70rem] rounded-full blur-2xl opacity-40"></div>
+        
+        
+        <div class="justify-end ml-[62rem] absolute -mt-36 hover:rotate-6">
+            <%= image_tag 'Bell.png', width: "180px", height: "180px" %>
+        </div>
+
+        <div class="justify-center absolute mt-[45rem]">
+            <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
+        </div>
+
+    </div>
+    
+   
+
+    <div class="h-screen relative w-auto mt-60 flex flex-col items-center ">
+    
+        <%# <div class="w-3 h-3 bg-gradient-to-r from-fuchsia-400 to-fuchsia-600 absolute rounded-full mr-[32rem] mt-12 drop-shadow-lg hover:rotate-90"></div> %>
+        <div class="w-4 h-4 bg-gradient-to-r from-fuchsia-400 to-fuchsia-600 absolute rounded-full ml-[40rem] mt-64 drop-shadow-lg hover:rotate-90"></div>
+  
+
+        <h1 class="text-4xl font-extrabold text-center" >Nossos Serviços</h1>
+        <div class="grid w-3/4 grid-cols-3 gap-4 mt-12">
+            <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-indigo-300 transition-colors h-32 shadow-md">
+            <%= image_tag 'Site 1.png', width: "85px", height: "85px", class:"ml-4" %>
+            <div class="gap-2">
+                <strong class="text-xl">Criação de sites</strong>
+                <p class="text-sm" >Sites responsivos e otimizados, alinhados ao que você precisa para ter presença na web.</p>
+            </div>
+            </a>
+        
+        <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-indigo-300 transition-colors h-32 shadow-md">
+            <%= image_tag 'Nuvem 1.png', width: "90px", height: "90px", class:"ml-4" %>
+            <div class="gap-2">
+                <strong class="text-xl">Backup Corporativo</strong>
+                <p class="text-sm" >Proteção para o fluxo de dados da sua empresa com organização e segurança.</p>
+            </div>
+            </a>
+        
+        <a href="#" class="group rounded-md flex items-center overflow-hidden hover:bg-indigo-300 transition-colors h-32 shadow-md">
+            <%= image_tag 'Email 1.png', width: "95px", height: "95px", class:"ml-4" %>
+            <div class="gap-2">
+                <strong class="text-xl">E-mail Corporativo</strong>
+                <p class="text-sm" >Serviço de e-mail com o nome da sua empresa. Facilidade para você e credibilidade para os clientes.</p>
+            </div>
+            </a> 
+        </div>
+
+        <div class="justify-center absolute mt-80">
+            <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
+        </div>
+
+        
+    </div>
+
+        
+    <div class="flex relative items-center w-full mt-60 justify-center">
+
+        <div class="w-2/6 h-auto ml-16 mt-16">
+            <h1 class="text-left w-96 text-lime-500 text-lg"><strong>O QUE FAZEMOS?</strong></h1>
+            <p class="text-2xl mt-2"><strong>A W3 desenvolve estratégias de comunicação em todas as etapas: idealização, planejamento e execução.</strong></p>
+            <p class="text-base leading-8 mt-4">Voltadas ao desenvolvimento e ao fortalecimento de marcas sempre com vistas às necessidades reais das pessoas diante de todas as plataformas disponíveis.</p>
+            <button class="w-48 h-12 hover:drop-shadow-xl rounded-full border-solid bg-gradient-to-r from-lime-500 to-indigo-600 text-white mt-8">Nossos Trabalhos</button>
+        </div>
+        
+        
+        <div class="flex h-auto justify-center rounded-lg hover:rotate-12">
+            <%= image_tag 'Teste 1.png', width: "600px", height: "600px",  class:"" %>
+        </div>
+        
+        <div class="justify-center absolute mt-[45rem]">
+            <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
+        </div>
+
+        <div class="absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-80 h-80 rounded-full blur-2xl opacity-20 inset-x-0 bottom-0 "></div>
+   
+    </div>
+    
+    
+    <div class="h-screen relative w-auto mt-60 flex flex-col items-center ">
+    
+        <%# <div class="w-3 h-3 bg-gradient-to-r from-fuchsia-400 to-fuchsia-600 absolute rounded-full mr-[32rem] mt-12 drop-shadow-lg hover:rotate-90"></div> %>
+        <div class="w-6 h-6 bg-gradient-to-r from-yellow-400 to-yellow-600 absolute rounded-full mr-[75rem] mt-[28rem] drop-shadow-lg hover:rotate-90"></div>
+  
+
+        <h1 class="text-4xl font-extrabold text-center" >Criação de Sites</h1>
+        <div class="grid grid-cols-3 gap-4 mt-12">
+            <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-lime-300 transition-colors h-auto p-12 shadow-md">
+            <div class="gap-4">
+                <strong class="text-base">SITES</strong>
+                <div class="text-4xl w-60 text-indigo-600 mt-4"><strong>Sites responsivos</strong></div>
+                <p class="w-64 text-lg mt-4" >Construímos sites com a tecnologia mais recente do mercado, criando uma versão para cada dispositivo: Pc, Table e Smartphone.</p>
+            </div>
+            </a>
+
+            <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-lime-300 transition-colors h-auto p-12 shadow-md">
+            <div class="gap-4">
+                <strong class="text-base">SITES</strong>
+                <div class="text-4xl w-60 text-lime-600 mt-4"><strong>Sites responsivos</strong></div>
+                <p class="w-64 text-lg mt-4" >Construímos sites com a tecnologia mais recente do mercado, criando uma versão para cada dispositivo: Pc, Table e Smartphone.</p>
+            </div>
+            </a>
+    
+            <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-lime-300 transition-colors h-auto p-12 shadow-md">
+            <div class="gap-4">
+                <strong class="text-base">SITES</strong>
+                <div class="text-4xl w-60 text-indigo-600 mt-4"><strong>Sites responsivos</strong></div>
+                <p class="w-64 text-lg mt-4" >Construímos sites com a tecnologia mais recente do mercado, criando uma versão para cada dispositivo: Pc, Table e Smartphone.</p>
+            </div>
+            </a>
+
+        </div>
+
+        <div class="flex items-center h-4 w-96 mt-16 bg-indigo-200 rounded-full ">
+            <div class="h-4 w-16 bg-gradient-to-r from-lime-400 to-indigo-400 rounded-full ">
+            </div>
+        </div>
+
+        <div class="justify-center absolute mt-[40rem]">
+            <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
+        </div>
+
+        <div class="absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-96 h-96 mt-96 ml-[70rem] rounded-full blur-2xl opacity-40"></div>
+        
+        
+    </div>
+
+    <div class="flex flex-col items-center w-full mt-60 justify-center">
+        
+        <h1 class="text-4xl font-extrabold text-center">Notícias Recentes</h1>
+
+        <div class="grid grid-cols-4 gap-8 mt-12">
+            <div class="flex flex-col w-auto mt-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg w-1/5 h-auto justify-center rounded-lg hover:bg-indigo-100">
+                <div class="w-56 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
+                <h4 class="text-sm mt-3 text-center w-56"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
+            </div>
+
+            <div class="flex flex-col w-auto mb-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg w-1/5 h-auto justify-center rounded-lg hover:bg-indigo-100">
+                <div class="w-56 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
+                <h4 class="text-sm mt-3 text-center w-56"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
+            </div>
+
+            <div class="flex flex-col w-auto mt-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg w-1/5 h-auto justify-center rounded-lg hover:bg-indigo-100">
+                <div class="w-56 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
+                <h4 class="text-sm mt-3 text-center w-56"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
+            </div>
+
+            <div class="flex flex-col w-auto mb-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg w-1/5 h-auto justify-center rounded-lg hover:bg-indigo-100">
+                <div class="w-56 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
+                <h4 class="text-sm mt-3 text-center w-56"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
+            </div>
+        </div>
+        
+        <button class="w-40 h-12 hover:drop-shadow-xl rounded-full border-solid bg-gradient-to-r from-lime-500 to-indigo-600 text-white mt-20">Saiba Mais</button>
+         
+        <div class="justify-center mt-20">
+            <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
+        </div>
+
+        <div class="absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-80 h-80 rounded-full blur-2xl opacity-40 inset-x-0 mt-96"></div>
+       
+    </div>
+    
+    <div class="flex flex-col items-center w-full mt-60 justify-center">
+        
+        <h1 class="text-3xl font-extrabold text-center">Nossos Clientes</h1>
+        <h1 class="text-3xl w-3/4 mt-5 font-extrabold text-lime-600 text-center">Parceiros da W3. Profissionalismo e confiança aliados a uma visão de negócios eficiente e humanizada.</h1>
+        
+         <div class="justify-center mt-20">
+           
+        </div>
+       
+    </div>
+   
+    <div class="flex flex-col items-center w-full mt-60 justify-center">
+        <%= image_tag 'FundoFooter.png', class:"absolute opacity-30" %>
+        <div class=" absolute justify-center w-1/3">
+            <h1 class="text-5xl font-extrabold text-center">Venha ser nosso parceiro</h1>
+        </div>
+
+        <button class="absolute mt-52 w-40 h-12 mt-20 hover:drop-shadow-xl rounded-full border-solid bg-gradient-to-r from-lime-500 to-indigo-600 text-white">Saiba Mais</button>
+        <div class="w-4 h-4 bg-gradient-to-r from-violet-400 to-violet-600 absolute rounded-full ml-48 -mt-60 drop-shadow-lg hover:rotate-90"></div>
+        <div class="w-5 h-5 bg-gradient-to-r from-yellow-400 to-yellow-600 absolute rounded-full mr-[38rem] mt-[28rem] drop-shadow-lg hover:rotate-90"></div>
+        <div class="w-6 h-6 bg-gradient-to-r from-pink-400 to-pink-600 absolute rounded-full ml-[38rem] mt-48 drop-shadow-lg hover:rotate-90"></div>
+    
+    </div>
+
+    <footer class="flex flex-col items-center w-full h-auto text-white mt-96 justify-center bg-indigo-700">
+        <div class="relative flex grid grid-cols-4 gap-4 p-8">
+            <%= image_tag 'Img2.png', width: "210px", height: "50px", class:"mt-6 ml-40 " %>
+            <nav class="flex flex-col gap-1 ml-52">
+                <a href="" class="text-base"><strong>Email</strong></a>
+                <a href="" class="text-sn hover:text-lime-500">atendimento@agenciaw3.digital</a>
+            </nav>
+            <nav class="flex flex-col gap-1 ml-32">
+                <a href="" class="text-base"><strong>Nosso Endereço</strong></a>
+                <a href="" class="text-sn hover:text-lime-500 w-60">Rua Walter Hubacher, 1808 Nova Andradina - MS</a>
+            </nav>
+            <nav class="flex flex-col gap-1 w-60 ">
+                <a href="" class="text-base"><strong>Telefone</strong></a>
+                <a href="" class="text-sn hover:text-lime-500">+55 (67) 3441-9114</a>
+                <a href="" class="text-sn hover:text-lime-500">+55 (67) 3441-7076</a>
+            </nav>
+        </div>
+    </footer>
+         
+</div>
+
