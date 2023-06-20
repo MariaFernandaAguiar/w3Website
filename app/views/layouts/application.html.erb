@@ -10,7 +10,8 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
-  <body class="bg-slate-50 text-black overflow-x-hidden">
-    <%= yield %>
+  <body class="static h-screen max-w-screen-xl mx-auto flex flex-col items-center bg-slate-50 text-black overflow-x-hidden">
+     <%= yield %>
   </body>
+
 </html>
