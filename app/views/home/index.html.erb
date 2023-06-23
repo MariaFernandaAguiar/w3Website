@@ -1,6 +1,6 @@
-<div class="absolute left-0 top-0 bg-gradient-to-r from-lime-400 to-indigo-400 w-60 h-60 rounded-full blur-2xl opacity-40"></div>
+<div class="invisible sm:visible absolute left-0 top-0 bg-gradient-to-r from-lime-400 to-indigo-400 w-60 h-60 rounded-full blur-2xl opacity-40"></div>
 
-<header class="static fixed mx-auto items-center p-6 w-auto justify-center bg-slate-50 rounded-lg">
+<header class="hidden sm:block static fixed mx-auto items-center p-6 w-auto justify-center bg-slate-50 rounded-lg">
     <nav class="flex items-center gap-5">
         <%= image_tag 'logo.png', width: "210px", height: "50px", class:"mr-60" %>
         <a href="" class="text-sn text-lime-500 hover:text-lime-700"><strong>Inicio</strong></a>
@@ -12,56 +12,77 @@
     </nav>
 </header>
 
+<header class="block sm:hidden fixed flex items-center p-4 w-full justify-center bg-slate-200 rounded-lg drop-shadow-lg">
+    <%= image_tag 'logo.png', width: "150px", height: "32px", class:"mr-24" %>
+    <button class="w-20 h-8 rounded-full border-solid border-2 border-zinc-300 ml-8 text-sm"><strong>Contato</strong></button>
+</header>
 
-<section class="flex items-center mt-32 justify-center">
-    <div class="relative inset-y-20 -left-10 w-4 h-4 bg-gradient-to-r from-violet-400 to-violet-600 absolute rounded-full drop-shadow-lg hover:rotate-90"></div>
-    <div class="relative -top-16 left-[30rem] w-5 h-5 bg-gradient-to-r from-yellow-400 to-yellow-600 absolute rounded-full drop-shadow-lg hover:rotate-90"></div>
+<section class="flex items-center mt-32 p-6 mb:p-0 lg:p-0 justify-center">
+    
+    <div class="invisible sm:visible relative inset-y-20 -left-10 w-4 h-4 bg-gradient-to-r from-violet-400 to-violet-600 absolute rounded-full drop-shadow-lg hover:rotate-90"></div>
+    <div class="invisible sm:visible relative -top-16 left-[30rem] w-5 h-5 bg-gradient-to-r from-yellow-400 to-yellow-600 absolute rounded-full drop-shadow-lg hover:rotate-90"></div>
 
-    <div class="w-2/5 h-auto mr-40">
-        <h1 class="text-left w-96 text-6xl"><strong>Tecnologia e Criatividade</strong></h1>
-        <p class="text-xl leading-8 mt-8">Comunicação com ênfase em criação, mídia e produção digital. Pensamento e planejamento inovadores para proporcionar soluções inteligentes.</p>
+
+    <div class="flex flex-col md:flex lg:flex md:w-2/5 lg:w-2/5 h-auto lg:mr-40 items-center mb:items-start lg:items-start">
+        <h1 class="text-center md:text-left lg:text-left text-5xl md:w-72 md:text-5xl lg:w-96 lg:text-6xl"><strong>Tecnologia e Criatividade</strong></h1>
+        <p class="text-center mt-6 md:text-left lg:text-left text-xl md:leading-8 md:mt-8 lg:leading-8 lg:mt-8">Comunicação com ênfase em criação, mídia e produção digital. Pensamento e planejamento inovadores para proporcionar soluções inteligentes.</p>
         <button class="w-44 h-10 hover:drop-shadow-xl rounded-full border-solid bg-gradient-to-r from-lime-500 to-indigo-600 text-white mt-16">Entre em contato</button>
-    </div>
     
-    
-    <div class="flex flex-col mt-8 gap-2 bg-slate-300 bg-opacity-30 shadow-lg w-auto p-4 h-auto justify-center rounded-lg hover:rotate-12">
-        <div class="flex items-center">
-            <div class="w-8 h-8 mt-4 rounded-full bg-white border-solid border-2 border-stone-300">
-                <%= image_tag 'image 1.png', width: "20px", height: "20px", class:"mt-1 ml-1" %>
-                <div class=" absolute w-3 h-3 bg-blue-400 rounded-full border-solid border-2 border-black ml-5 -mt-2"></div>
-                
+        <div class="block sm:hidden flex flex-col md:flex-col mt-16 gap-2 bg-slate-300 bg-opacity-30 shadow-lg w-auto p-4 h-auto justify-center rounded-lg hover:rotate-12">
+            <div class="flex items-center">
+                <div class="w-8 h-8 mt-4 rounded-full bg-white border-solid border-2 border-stone-300">
+                    <%= image_tag 'image 1.png', width: "20px", height: "20px", class:"mt-1 ml-1" %>
+                    <div class=" absolute w-3 h-3 bg-blue-400 rounded-full border-solid border-2 border-black ml-5 -mt-2"></div>
+                    
+                </div>
+                <h4 class="text-xs mt-4 ml-1"><strong>Agencia W3</strong></h4>
+                <div class="w-2 h-2 bg-black absolute rounded-full ml-56 mt-5"></div>
+                <div class="w-2 h-2 bg-black absolute rounded-full ml-60 mt-5"></div>
             </div>
-            <h4 class="text-xs mt-4 ml-1"><strong>Agencia W3</strong></h4>
-            <div class="w-2 h-2 bg-black absolute rounded-full ml-56 mt-5"></div>
-            <div class="w-2 h-2 bg-black absolute rounded-full ml-60 mt-5"></div>
+            <div class="bg-lime-300 w-64 h-72 rounded-lg"><%= image_tag 'logo2.png', width: "200px", height: "200px", class:"ml-7 mt-10" %></div>
+            <h4 class="text-sm mt-3"><strong>lorem ipsum</strong></h4>
+            <h4 class="text-sm -mt-2 ">Lorem ipsum dolor sit amet</h4>
         </div>
-        <div class="bg-lime-300 w-64 h-72 rounded-lg"><%= image_tag 'logo2.png', width: "200px", height: "200px", class:"ml-7 mt-10" %></div>
-        <h4 class="text-sm mt-3"><strong>lorem ipsum</strong></h4>
-        <h4 class="text-sm -mt-2 ">Lorem ipsum dolor sit amet</h4>
+    
     </div>
-    <div class="absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-96 h-96 mt-96 ml-[70rem] rounded-full blur-2xl opacity-40"></div>
     
+    <div class="hidden sm:block">
+        <div class="flex flex-col md:flex-col mt-8 gap-2 bg-slate-300 bg-opacity-30 shadow-lg w-auto p-4 h-auto justify-center rounded-lg hover:rotate-12">
+            <div class="flex items-center">
+                <div class="w-8 h-8 mt-4 rounded-full bg-white border-solid border-2 border-stone-300">
+                    <%= image_tag 'image 1.png', width: "20px", height: "20px", class:"mt-1 ml-1" %>
+                    <div class=" absolute w-3 h-3 bg-blue-400 rounded-full border-solid border-2 border-black ml-5 -mt-2"></div>
+                    
+                </div>
+                <h4 class="text-xs mt-4 ml-1"><strong>Agencia W3</strong></h4>
+                <div class="w-2 h-2 bg-black absolute rounded-full ml-56 mt-5"></div>
+                <div class="w-2 h-2 bg-black absolute rounded-full ml-60 mt-5"></div>
+            </div>
+            <div class="bg-lime-300 w-64 h-72 rounded-lg"><%= image_tag 'logo2.png', width: "200px", height: "200px", class:"ml-7 mt-10" %></div>
+            <h4 class="text-sm mt-3"><strong>lorem ipsum</strong></h4>
+            <h4 class="text-sm -mt-2 ">Lorem ipsum dolor sit amet</h4>
+        </div>
+        </div>
+
+    <div class="invisible sm:visible absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-96 h-96 mt-96 ml-[70rem] rounded-full blur-2xl opacity-40"></div>
     
-    <div class="justify-end ml-[62rem] absolute -mt-36 hover:rotate-6">
+    <div class="invisible sm:visible lg:justify-end lg:ml-[62rem] absolute lg:-mt-36 lg:hover:rotate-6 md:justify-end md:ml-[46rem] md:-mt-36">
         <%= image_tag 'Bell.png', width: "180px", height: "180px" %>
     </div>
 
-    <div class="justify-center absolute mt-[45rem]">
+    <div class="justify-center absolute mt-[65rem] md:mt-[45rem] lg:mt-[45rem]">
         <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
     </div>
-
 </section>
-
-
 
 <article class="h-screen relative w-auto mt-60 flex flex-col items-center ">
 
     <%# <div class="w-3 h-3 bg-gradient-to-r from-fuchsia-400 to-fuchsia-600 absolute rounded-full mr-[32rem] mt-12 drop-shadow-lg hover:rotate-90"></div> %>
-    <div class="w-4 h-4 bg-gradient-to-r from-fuchsia-400 to-fuchsia-600 absolute rounded-full ml-[40rem] mt-64 drop-shadow-lg hover:rotate-90"></div>
+    <div class="invisible sm:visible w-4 h-4 bg-gradient-to-r from-fuchsia-400 to-fuchsia-600 absolute rounded-full ml-[40rem] mt-64 drop-shadow-lg hover:rotate-90"></div>
 
 
     <h1 class="text-4xl font-extrabold text-center" >Nossos Serviços</h1>
-    <div class="grid w-3/4 grid-cols-3 gap-3 mt-12">
+    <div class="w-3/4 lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 gap-3 mt-8 lg:mt-12">
         <a href="#" class="group rounded-md flex items-center gap-3 overflow-hidden hover:bg-indigo-300 transition-colors h-32 shadow-md">
             <%= image_tag 'Site 1.png', width: "80px", height: "80px", class:"ml-4" %>
             <div class="gap-2">
@@ -87,17 +108,17 @@
         </a> 
     </div>
 
-    <div class="justify-center absolute mt-80">
+    <div class="justify-center absolute mt-[35rem] md:mt-80 lg:mt-80">
         <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
     </div>
 
     
 </article>
 
-    
+
 <article class="flex relative items-center w-full mt-60 justify-center">
 
-    <div class="w-2/6 h-auto ml-16 mt-16">
+    <div class="w-4/6 lg:w-2/6 h-auto lg:ml-16 mt-16">
         <h1 class="text-left w-96 text-lime-500 text-lg"><strong>O QUE FAZEMOS?</strong></h1>
         <p class="text-2xl mt-2"><strong>A W3 desenvolve estratégias de comunicação em todas as etapas: idealização, planejamento e execução.</strong></p>
         <p class86="text-base leading-8 mt-4">Voltadas ao desenvolvimento e ao fortalecimento de marcas sempre com vistas às necessidades reais das pessoas diante de todas as plataformas disponíveis.</p>
@@ -105,7 +126,7 @@
     </div>
     
     
-    <div class="flex h-auto justify-center rounded-lg hover:rotate-12">
+    <div class="hidden sm:block flex h-auto justify-center rounded-lg hover:rotate-12">
         <%= image_tag 'Teste 1.png', width: "600px", height: "600px",  class:"" %>
     </div>
     
@@ -113,19 +134,18 @@
         <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
     </div>
 
-    <div class="absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-80 h-80 rounded-full blur-2xl opacity-20 inset-x-0 bottom-0 "></div>
+    <div class="invisible sm:visible absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-80 h-80 rounded-full blur-2xl opacity-20 inset-x-0 bottom-0 "></div>
 
 </article>
-
 
 <article class="h-screen relative w-auto mt-60 flex flex-col items-center ">
 
     <%# <div class="w-3 h-3 bg-gradient-to-r from-fuchsia-400 to-fuchsia-600 absolute rounded-full mr-[32rem] mt-12 drop-shadow-lg hover:rotate-90"></div> %>
-    <div class="w-6 h-6 bg-gradient-to-r from-yellow-400 to-yellow-600 absolute rounded-full mr-[75rem] mt-[28rem] drop-shadow-lg hover:rotate-90"></div>
+    <div class="invisible sm:visible w-6 h-6 bg-gradient-to-r from-yellow-400 to-yellow-600 absolute rounded-full mr-[75rem] mt-[28rem] drop-shadow-lg hover:rotate-90"></div>
 
 
     <h1 class="text-4xl font-extrabold text-center" >Criação de Sites</h1>
-    <div class="grid grid-cols-3 gap-4 mt-12">
+    <div class="block sm:hidden mt-12" >
         <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-lime-300 transition-colors h-auto p-7 shadow-md">
         <div class="gap-4">
             <strong class="text-base">SITES</strong>
@@ -134,22 +154,34 @@
         </div>
         </a>
 
-        <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-lime-300 transition-colors h-auto p-7 shadow-md">
-        <div class="gap-4">
-            <strong class="text-base">SITES</strong>
-            <div class="text-4xl w-60 text-lime-600 mt-4"><strong>Sites responsivos</strong></div>
-            <p class="w-64 text-lg mt-4" >Construímos sites com a tecnologia mais recente do mercado, criando uma versão para cada dispositivo: Pc, Table e Smartphone.</p>
-        </div>
-        </a>
+    </div>
+    <div class="hidden sm:block"> 
+        <div class="grid grid-cols-3 gap-4 mt-12">
+            <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-lime-300 transition-colors h-auto p-7 shadow-md">
+            <div class="gap-4">
+                <strong class="text-base">SITES</strong>
+                <div class="text-4xl w-60 text-indigo-600 mt-4"><strong>Sites responsivos</strong></div>
+                <p class="w-64 text-lg mt-4" >Construímos sites com a tecnologia mais recente do mercado, criando uma versão para cada dispositivo: Pc, Table e Smartphone.</p>
+            </div>
+            </a>
 
-        <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-lime-300 transition-colors h-auto p-7 shadow-md">
-        <div class="gap-4">
-            <strong class="text-base">SITES</strong>
-            <div class="text-4xl w-60 text-indigo-600 mt-4"><strong>Sites responsivos</strong></div>
-            <p class="w-64 text-lg mt-4" >Construímos sites com a tecnologia mais recente do mercado, criando uma versão para cada dispositivo: Pc, Table e Smartphone.</p>
-        </div>
-        </a>
+            <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-lime-300 transition-colors h-auto p-7 shadow-md">
+            <div class="gap-4">
+                <strong class="text-base">SITES</strong>
+                <div class="text-4xl w-60 text-lime-600 mt-4"><strong>Sites responsivos</strong></div>
+                <p class="w-64 text-lg mt-4" >Construímos sites com a tecnologia mais recente do mercado, criando uma versão para cada dispositivo: Pc, Table e Smartphone.</p>
+            </div>
+            </a>
 
+            <a href="#" class="group rounded-md flex items-center gap-4 overflow-hidden hover:bg-lime-300 transition-colors h-auto p-7 shadow-md">
+            <div class="gap-4">
+                <strong class="text-base">SITES</strong>
+                <div class="text-4xl w-60 text-indigo-600 mt-4"><strong>Sites responsivos</strong></div>
+                <p class="w-64 text-lg mt-4" >Construímos sites com a tecnologia mais recente do mercado, criando uma versão para cada dispositivo: Pc, Table e Smartphone.</p>
+            </div>
+            </a>
+
+        </div>
     </div>
 
     <div class="flex items-center h-4 w-96 mt-16 bg-indigo-200 rounded-full ">
@@ -161,34 +193,36 @@
         <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
     </div>
 
-    <div class="absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-96 h-96 mt-96 ml-[70rem] rounded-full blur-2xl opacity-40"></div>
+    <div class="invisible sm:visible absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-96 h-96 mt-96 ml-[70rem] rounded-full blur-2xl opacity-40"></div>
     
     
+</article>
+
 </article>
 
 <article class="flex flex-col items-center w-full mt-60 justify-center">
     
     <h1 class="text-4xl font-extrabold text-center">Notícias Recentes</h1>
 
-    <div class="grid grid-cols-4 gap-4 mt-12">
-        <div class="flex flex-col w-auto mt-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg h-auto justify-center rounded-lg hover:bg-indigo-100">
-            <div class="w-52 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
-            <h4 class="text-sm mt-3 text-center w-48"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
+    <div class="lg:grid lg:grid-cols-4 md:grid md:grid-cols-4 gap-4 mt-12">
+        <div class="flex flex-col w-auto mt-6  md:mt-20 lg:mt-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg h-auto justify-center rounded-lg hover:bg-indigo-100">
+            <div class="lg:w-52 w-72 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
+            <h4 class="text-sm mt-3 text-center w-72 lg:w-48"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
         </div>
 
-        <div class="flex flex-col w-auto mb-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg h-auto justify-center rounded-lg hover:bg-indigo-100">
-            <div class="w-52 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
-            <h4 class="text-sm mt-3 text-center w-48"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
+        <div class="flex flex-col w-auto mt-6 md:mb-20 lg:mb-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg h-auto justify-center rounded-lg hover:bg-indigo-100">
+            <div class="lg:w-52 w-72 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
+            <h4 class="text-sm mt-3 text-center w-72 lg:w-48"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
         </div>
 
-        <div class="flex flex-col w-auto mt-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg h-auto justify-center rounded-lg hover:bg-indigo-100">
-            <div class="w-52 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
-            <h4 class="text-sm mt-3 text-center w-48"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
+        <div class="flex flex-col w-auto mt-6 md:mt-20 lg:mt-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg h-auto justify-center rounded-lg hover:bg-indigo-100">
+            <div class="lg:w-52 w-72 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
+            <h4 class="text-sm mt-3 text-center w-72 lg:w-48"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
         </div>
 
-        <div class="flex flex-col w-auto mb-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg h-auto justify-center rounded-lg hover:bg-indigo-100">
-            <div class="w-52 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
-            <h4 class="text-sm mt-3 text-center w-48"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
+        <div class="flex flex-col w-auto mt-6 md:mb-20 lg:mb-20 p-4 gap-2 bg-slate-50 bg-opacity-30 shadow-lg h-auto justify-center rounded-lg hover:bg-indigo-100">
+            <div class="lg:w-52 w-72 h-72"><%= image_tag '06.png', class:"h-full rounded-lg"%></div>
+            <h4 class="text-sm mt-3 text-center w-72 lg:w-48"><strong>Joias do Brasil em Orlando (EUA), com toque especial W3</strong></h4>
         </div>
     </div>
     
@@ -198,7 +232,7 @@
         <%= image_tag 'Vector.png', width: "80px", height: "80px" %>
     </div>
 
-    <div class="absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-80 h-80 rounded-full blur-2xl opacity-40 inset-x-0 mt-96"></div>
+    <div class="invisible sm:visible absolute bg-gradient-to-r from-lime-400 to-indigo-400 w-80 h-80 rounded-full blur-2xl opacity-40 inset-x-0 mt-96"></div>
 
 </article>
 
@@ -214,37 +248,53 @@
 </article>
 
 <article class="flex flex-col items-center w-full mt-60 justify-center">
-    <%= image_tag 'FundoFooter.png', class:"absolute opacity-30" %>
-    <div class=" absolute justify-center w-1/3">
-        <h1 class="text-5xl font-extrabold text-center">Venha ser nosso parceiro</h1>
+    <%= image_tag 'FundoFooter.png', class:"absolute object-cover h-full w-full opacity-30" %>
+    <div class=" absolute justify-center w-2/3">
+        <h1 class="text-4xl lg:text-5xl font-extrabold text-center">Venha ser nosso parceiro</h1>
     </div>
 
     <button class="absolute mt-52 w-40 h-12 mt-20 hover:drop-shadow-xl rounded-full border-solid bg-gradient-to-r from-lime-500 to-indigo-600 text-white">Saiba Mais</button>
-    <div class="w-4 h-4 bg-gradient-to-r from-violet-400 to-violet-600 absolute rounded-full ml-48 -mt-60 drop-shadow-lg hover:rotate-90"></div>
-    <div class="w-5 h-5 bg-gradient-to-r from-yellow-400 to-yellow-600 absolute rounded-full mr-[38rem] mt-[28rem] drop-shadow-lg hover:rotate-90"></div>
-    <div class="w-6 h-6 bg-gradient-to-r from-pink-400 to-pink-600 absolute rounded-full ml-[38rem] mt-48 drop-shadow-lg hover:rotate-90"></div>
+    <div class="invisible sm:visible w-4 h-4 bg-gradient-to-r from-violet-400 to-violet-600 absolute rounded-full ml-48 -mt-60 drop-shadow-lg hover:rotate-90"></div>
+    <div class="invisible sm:visible w-5 h-5 bg-gradient-to-r from-yellow-400 to-yellow-600 absolute rounded-full mr-[38rem] mt-[28rem] drop-shadow-lg hover:rotate-90"></div>
+    <div class="invisible sm:visible w-6 h-6 bg-gradient-to-r from-pink-400 to-pink-600 absolute rounded-full ml-[38rem] mt-48 drop-shadow-lg hover:rotate-90"></div>
 
 </article>
 
-
-<footer class="flex flex-col items-center w-full h-auto mt-[30rem] justify-center">
-    <div class="absolute container mx-auto py-4 text-white bg-indigo-700">
-        <div class="relative flex grid grid-cols-4 gap-4 p-8">
-            <%= image_tag 'Img2.png', width: "210px", height: "50px", class:"mt-6 ml-60 " %>
-            <nav class="flex flex-col gap-1 ml-52">
-                <a href="" class="text-base"><strong>Email</strong></a>
+<footer class="absolute w-full mt-96 h-auto w-full bg-indigo-700 top-[380rem] lg:top-[260rem]"> 
+    <div class=" container mx-auto py-4 text-white">
+        <div class="hidden sm:block ">
+            <div class="relative flex grid grid-cols-4 gap-4 p-8">
+                <%= image_tag 'Img2.png', width: "210px", height: "50px", class:"mt-6 lg:ml-56 " %>
+                <nav class="flex flex-col gap-1 ml-40">
+                    <a href="" class="text-base"><strong>Email</strong></a>
+                    <a href="" class="text-sn hover:text-lime-500">atendimento@agenciaw3.digital</a>
+                </nav>
+                <nav class="flex flex-col gap-1 ml-28">
+                    <a href="" class="text-base"><strong>Nosso Endereço</strong></a>
+                    <a href="" class="text-sn hover:text-lime-500 w-60">Rua Walter Hubacher, 1808 Nova Andradina - MS</a>
+                </nav>
+                <nav class="flex flex-col gap-1 w-60">
+                    <a href="" class="text-base"><strong>Telefone</strong></a>
+                    <a href="" class="text-sn hover:text-lime-500">+55 (67) 3441-9114</a>
+                    <a href="" class="text-sn hover:text-lime-500">+55 (67) 3441-7076</a>
+                </nav>
+            </div>
+        </div>
+        <div class="block sm:hidden justify-center p-6">
+            <nav class="flex flex-col gap-1 items-center">
+            <%= image_tag 'Img2.png', width: "210px", height: "50px", class:"items-center" %>
+                <a href="" class="text-base mt-6"><strong>Email</strong></a>
                 <a href="" class="text-sn hover:text-lime-500">atendimento@agenciaw3.digital</a>
             </nav>
-            <nav class="flex flex-col gap-1 ml-32">
+            <nav class="flex flex-col gap-1 items-center mt-3">
                 <a href="" class="text-base"><strong>Nosso Endereço</strong></a>
-                <a href="" class="text-sn hover:text-lime-500 w-60">Rua Walter Hubacher, 1808 Nova Andradina - MS</a>
+                <a href="" class="text-sn hover:text-lime-500">Rua Walter Hubacher, 1808 Nova Andradina - MS</a>
             </nav>
-            <nav class="flex flex-col gap-1 w-60">
+            <nav class="flex flex-col gap-1 items-center mt-3">
                 <a href="" class="text-base"><strong>Telefone</strong></a>
                 <a href="" class="text-sn hover:text-lime-500">+55 (67) 3441-9114</a>
                 <a href="" class="text-sn hover:text-lime-500">+55 (67) 3441-7076</a>
             </nav>
-        </div>
+        </div>    
     </div>
 </footer>
-    
