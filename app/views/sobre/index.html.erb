@@ -1,0 +1,111 @@
+<header class="block sm:hidden overflow-x-hidden fixed top-0 left-0 z-[9999] inline-flex items-center p-4 w-full justify-center bg-slate-50 rounded-lg drop-shadow-lg">
+    <%= image_tag 'logo.png', width: "150px", height: "32px", class:"mr-24" %>
+    <button class="w-20 h-8 rounded-full border-solid border-2 border-zinc-300 ml-8 text-sm"><strong>Contato</strong></button>
+</header>
+
+<header class="hidden sm:block fixed top-0 left-0 z-[9999] mx-auto items-center p-6 w-full justify-center bg-slate-50 rounded-lg drop-shadow-lg">
+    <nav class="flex items-center gap-5">
+        <%= image_tag 'logo.png', width: "210px", height: "50px", class:"md:ml-10 lg:mr-60" %>
+        <a href="" class=" md:ml-24 text-sn text-lime-500 hover:text-lime-700"><strong>Inicio</strong></a>
+        <a href="" class="text-sn text-black hover:text-lime-500"><strong>Sobre</strong></a> 
+        <a href="" class="text-sn text-black hover:text-lime-500"><strong>Serviços</strong></a>
+        <a href="" class="text-sn text-black hover:text-lime-500"><strong>Blog</strong></a>
+        <a href="" class="text-sn text-black hover:text-lime-500"><strong>Ajuda</strong></a>
+        <button class="w-24 h-8 rounded-full border-solid border-2 border-zinc-300 hover:bg-lime-500 ml-8"><strong>Contato</strong></button>
+    </nav>
+</header>
+
+<section class="flex flex-col items-center z-0 w-full">
+    <%= image_tag 'FundoFooter.png', class:"absolute object-cover opacity-30" %>
+    <h1 class="absolute mt-40 bg-white font-semibold text-2xl w-32 lg:text-3xl md:w-36 lg:w-40 text-center rounded-full">Sobre</h1>
+</section>
+
+
+<section class="flex flex-col md:grid md:grid-cols-2 items-center w-full mt-64 justify-center">
+    <%= image_tag 'Logo3D1.png', class:"flex md:ml-16 w-72 md:w-80" %>
+    <p class="p-7 text-base mt-5 md:mr-12 font-semibold">Há mais de 13 anos no mercado, a W3 é uma empresa de comunicação que gera valor por meio da criatividade. Pensamento e planejamento são nossas palavras-chave para desenvolvermos parcerias de êxito junto aos nossos clientes. Aqui, boas ideias e olhar inovador se traduzem em estratégia de negócios, de marca e de comunicação.</p>
+</section>
+
+<article class="static flex flex-col items-center md:grid md:grid-cols-3 mt-32 w-auto md:ml-20 justify-center">
+    
+    <div class="bg-slate-200 rounded-lg w-4/5 h-auto md:h-full p-7 items-center drop-shadow-lg hover:bg-indigo-300">
+        <div class="flex md:ml-0 ml-20 lg:ml-12 rounded-full bg-gradient-to-r from-lime-500 to-indigo-500 w-40 h-40 drop-shadow-lg">
+            <div class="rounded-full ml-4 mt-4 bg-white w-32 h-32 drop-shadow-lg">
+                <%= image_tag 'Missao.png', class:"flex ml-9 mt-8 w-14 h-14" %>
+            </div>
+        </div>
+        <h1 class="mt-11 font-semibold text-2xl">Missão<h1>
+        <p class="mt-2 text-base">Nossa missão consiste em atuar como o elo entre fornecedores e consumidores promovendo comunicação de qualidade, efetiva e dinâmica.</p>
+    </div>
+    
+    <div class="bg-slate-200 mt-10 md:mt-0 rounded-lg w-4/5 h-auto md:h-full p-7 items-center drop-shadow-lg hover:bg-indigo-300">
+        <div class="flex ml-20 md:ml-0 lg:ml-12 rounded-full bg-gradient-to-r from-lime-500 to-indigo-500 w-40 h-40 drop-shadow-lg">
+            <div class="rounded-full ml-4 mt-4 bg-white w-32 h-32 drop-shadow-lg">
+                <%= image_tag 'Visao.png', class:"flex ml-8 mt-9 w-16 h-14" %>
+            </div>
+        </div>
+        <h1 class="mt-11 font-semibold text-2xl">Visão<h1>
+        <p class="mt-2 text-base">Ser referência em comunicação e execução de projetos de marketing e serviços digitais.</p>
+    </div>
+    
+    <div class="bg-slate-200 mt-10 md:mt-0 rounded-lg w-4/5 h-auto md:h-full p-7 items-center drop-shadow-lg hover:bg-indigo-300">
+        <div class="flex ml-20 md:ml-0 lg:ml-12 rounded-full bg-gradient-to-r from-lime-500 to-indigo-500 w-40 h-40 drop-shadow-lg">
+            <div class="rounded-full ml-4 mt-4 bg-white w-32 h-32 drop-shadow-lg">
+                <%= image_tag 'Valores.png', class:"flex ml-9 mt-8 w-14 h-16" %>
+            </div>
+        </div>
+        <h1 class="mt-11 font-semibold text-2xl">Valores<h1>
+        <p class="mt-2 text-base">Pessoas em primeiro lugar, esse é o motivo pelo qual existimos, é o que nos motiva toda manhã ser o melhor que hoje.</p>
+    </div>
+</article>
+
+<article class="flex flex-col items-center w-full mt-60 justify-center">
+    
+    <h1 class="text-2xl font-extrabold text-center">Nossos Clientes</h1>
+    <h1 class="text-xl w-3/4 mt-5 font-extrabold text-lime-600 text-center">Parceiros da W3. Profissionalismo e confiança aliados a uma visão de negócios eficiente e humanizada.</h1>
+    
+    <div class="justify-center mt-20">
+    
+    </div>
+
+</article>
+
+<footer class=" absolute h-auto w-full bg-indigo-700 text-white mt-[160rem] md:mt-[100rem] justify-center p-6">
+    <div class=" container mx-auto py-4 md:py-0 text-white">
+        <div class="hidden sm:block ">
+            <div class="relative flex grid grid-cols-4 md:gap-12 lg:gap-4 p-6">
+                <%= image_tag 'Img2.png', width: "210px", height: "50px", class:"md:mt-4 lg:mt-6 lg:ml-56 " %>
+                <nav class="flex flex-col gap-1 lg:ml-40">
+                    <a href="" class="text-base"><strong>Email</strong></a>
+                    <a href="" class="md:text-xs lg:text-sn hover:text-lime-500 ">atendimento@agenciaw3.digital</a>
+                </nav>
+                <nav class="flex flex-col gap-1  lg:ml-28">
+                    <a href="" class="text-base"><strong>Nosso Endereço</strong></a>
+                    <a href="" class="md:text-xs lg:text-sn hover:text-lime-500 w-60">Rua Walter Hubacher, 1808 Nova Andradina - MS</a>
+                </nav>
+                <nav class="flex flex-col gap-1 w-60">
+                    <a href="" class="text-base"><strong>Telefone</strong></a>
+                    <a href="" class="md:text-xs lg:text-sn hover:text-lime-500">+55 (67) 3441-9114</a>
+                    <a href="" class="md:text-xs lg:text-sn  hover:text-lime-500">+55 (67) 3441-7076</a>
+                </nav>
+            </div>
+        </div>
+        <div class="block sm:hidden justify-center p-6">
+            <nav class="flex flex-col gap-1 items-center">
+            <%= image_tag 'Img2.png', width: "210px", height: "50px", class:"items-center" %>
+                <a href="" class="text-base mt-6"><strong>Email</strong></a>
+                <a href="" class="text-sn hover:text-lime-500">atendimento@agenciaw3.digital</a>
+            </nav>
+            <nav class="flex flex-col gap-1 items-center mt-3">
+                <a href="" class="text-base"><strong>Nosso Endereço</strong></a>
+                <a href="" class="text-sn hover:text-lime-500">Rua Walter Hubacher, 1808 Nova Andradina - MS</a>
+            </nav>
+            <nav class="flex flex-col gap-1 items-center mt-3">
+                <a href="" class="text-base"><strong>Telefone</strong></a>
+                <a href="" class="text-sn hover:text-lime-500">+55 (67) 3441-9114</a>
+                <a href="" class="text-sn hover:text-lime-500">+55 (67) 3441-7076</a>
+            </nav>
+        </div>    
+    </div>
+</footer>
+
