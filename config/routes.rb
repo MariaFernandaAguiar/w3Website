@@ -8,5 +8,6 @@ Rails.application.routes.draw do
 
   get "/home", to: "home#index"
   get "/sobre", to: "sobre#index"
+  get "/servicos", to: "servicos#index"
 
 end
