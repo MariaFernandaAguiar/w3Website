@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get "/sobre", to: "sobre#index"
   get "/servicos", to: "servicos#index"
   get "/blog", to: "blog#index"
+  get "/ajuda", to: "ajuda#index"
 end
